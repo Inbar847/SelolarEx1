@@ -38,17 +38,39 @@
             app:tint="@color/purple_200" />
     </LinearLayout>
 
-    <!-- Game grid -->
+    <!-- Distance Counter (Odometer) -->
+    <TextView
+        android:id="@+id/tvDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Distance: 0"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Score Counter (Coins) -->
+    <TextView
+        android:id="@+id/tvScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score: 0"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Game Grid -->
     <GridLayout
         android:id="@+id/gameGrid"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:rowCount="7"
-        android:columnCount="3"
         android:alignmentMode="alignMargins"
+        android:background="#eeeeee"
+        android:columnCount="5"
         android:columnOrderPreserved="false"
-        android:background="#eeeeee" />
+        android:rowCount="10" />
 
     <!-- Controls -->
     <LinearLayout
